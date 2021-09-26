@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+	int n1=100,n2=200;
+
+	printf("before swap n1 is %d n2 is %d/n",n1,n2);
+	
+	n2 = (n1^n2)^(n1=n2);
+	printf("After swap n1 is %d n2 is %d/n",n1,n2);
+}
+
+	
