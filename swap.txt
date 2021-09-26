@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+	int n1=5,n2=7,temp;
+
+	printf("before swap n1 is %d n2 is %d/n",n1,n2);
+	temp = n1;
+	n1 = n2;
+	n2 = temp;
+	printf("After swap n1 is %d n2 is %d/n",n1,n2);
+}
+
+	
