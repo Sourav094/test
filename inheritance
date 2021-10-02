@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+    protected:
+	 string str,degn;
+	 int sal;
+	public:
+		void name();
+		void desgn();
+		void display();
+		void income();
+};
+void employee::name()
+{
+	cout<<"enter name ";
+	cin>>str;
+}
+void employee::desgn()
+{
+	cout<<"enter designation ";
+	cin>>degn;
+}
+void employee::income()
+{
+		cout<<"enter monthly salary ";
+		cin>>sal;
+}
+void employee::display()
+{
+	cout<<"Employee name is "<<str<<endl;
+	cout<<"Designation is "<<degn<<endl;
+	cout<<"Monthly income is "<<sal<<endl;
+}
+class salary:public employee{
+	public:
+	int getsalary()
+	{
+		return(sal*12);
+		
+	}
+};
+int main()
+{
+	salary s;
+	{
+		s.name();
+		s.desgn();
+		s.income();
+		s.display();
+	}
+}
