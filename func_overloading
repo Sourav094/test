@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class shape
+{
+    float l,b,x;
+    
+    public:
+    void area(float,float);
+    void area(float x);
+};
+
+void shape::area(float l,float b)
+{
+    cout<<"Area of reactangle "<<l*b<<endl;
+}
+void shape::area(float x)
+{
+    cout<<"Area of circle "<<3.14*x*x<<endl;
+}
+
+int main()
+{
+    shape a;
+    a.area(2,4);
+    a.area(5);
+    return 0;
+}
